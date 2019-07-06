@@ -13,8 +13,14 @@ app.get('/cadastro',(req,res) => {
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.get('/Criacao de evento',(req,res) => {
-    res.sendfile('public/Criacao de evento.html');
+app.get('/criacaoDeEvento',(req,res) => {
+    res.sendfile('public/criacaoDeEvento.html');
+});
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/querParticiparDoEvento',(req,res) => {
+    res.sendfile('public/querParticiparDoEvento.html');
 });
 
 // Exemplo de rota para envio de dados de formulário
