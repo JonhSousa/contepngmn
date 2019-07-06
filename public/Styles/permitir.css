@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    background-image: url(../images/telas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    align-items: center;
+}
+
+#div-permitir-titulo{
+    margin-left: 10px;
+}
+
+/*container com flex box*/
+.container{
+    padding: 10px 0px 10px 0px;
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Showcard Gothic;
+}
+
+.formulario {
+    left: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.permitir{
+    text-decoration: none;
+    display: inline-block;
+    font-family: Showcard Gothic;
+    font-size: 1rem;
+    color: #666666;
+    text-align: center;
+    align-items: center;
+    width: px;   
+    background-color: #fefefe;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 20px;
+    border: 1px solid #211;
+}
+
+.permitir input {
+    background-color: #fefefe;
+    font-family: Showcard Gothic;
+    border: none !important;
+}
+
+.permitir a img{
+    padding-bottom: 0px;
+    width: 270px;
+    height: auto; 
+    align-items: center;   
+}
+
+.voltar{
+    text-decoration: none;
+    display: inline-block;
+    font-family: Showcard Gothic;
+    font-size: 1rem;
+    color: #666666;
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    background-color: #fefefe;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 20px;
+    border: 1px solid #211;
+}
+
+.voltar input {
+    background-color: #fefefe;
+    font-family: Showcard Gothic;
+    border: none !important;
+}
+
+.voltar a img{
+    padding-bottom: 0px;
+    width: 270px;
+    height: auto; 
+    align-items: center;   
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+}
