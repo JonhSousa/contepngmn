@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    background-image: url(../images/telas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    align-items: center;
+}
+
+#div-cadastro-titulo{
+    margin-left: 10px;
+}
+
+/*container com flex box*/
+.container{
+    padding: 10px 0px 10px 0px;
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.5s;
+    font-family: Showcard Gothic;
+}
+
+.formulario{
+    left: 10px;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.formulario div {
+    margin: 5px;
+}
+
+.formulario div label {
+    width: 94px;
+    display: inline-block;
+}
+
+.formulario div input {
+    border-radius: 5px;
+    background-color: #fefefe;
+    outline: none;
+    border: 1px solid #211;
+    line-height: 20px;
+}
+
+.links-sociais{
+    text-decoration: none;
+    display: inline-block;
+    font-family: Showcard Gothic;
+    font-size: 1rem;
+    color: #666666;
+}
+
+.cadastre{
+    text-decoration: none;
+    display: inline-block;
+    font-family: Showcard Gothic;
+    font-size: 1rem;
+    color: #666666;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    background-color: #fefefe;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 20px;
+    border: 1px solid #211;
+}
+
+.cadastre input {
+    background-color: #fefefe;
+    font-family: Showcard Gothic;
+    border: none !important;
+}
+
+.links-sociais a, .cadastre a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+
+.links-sociais a img{
+    background-color: #fefefe;
+    width: 70px;
+    height: auto; 
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #211;
+}
+
+.cadastre a img{
+    padding-bottom: 0px;
+    width: 270px;
+    height: auto; 
+    align-items: center;   
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+}
